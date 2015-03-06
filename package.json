@@ -1,0 +1,25 @@
+{
+  "name": "salesforce-here",
+  "version": "1.0.0",
+  "description": "salesforce-here streamlines the retrieval and storage of Salesforce Metadata",
+  "main": "./lib/salesforce-here.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benkrig/salesforce-here.git"
+  },
+  "keywords": [
+    "salesforce",
+    "metadata",
+    "api",
+    "retrieval"
+  ],
+  "author": "Benjamin Krig",
+  "license": "Copyright (c) 2015 Benjamin Krig",
+  "bugs": {
+    "url": "https://github.com/benkrig/salesforce-here/issues"
+  },
+  "homepage": "https://github.com/benkrig/salesforce-here"
+}
