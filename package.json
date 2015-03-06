@@ -16,10 +16,30 @@
     "api",
     "retrieval"
   ],
-  "author": "Benjamin Krig",
+
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
+
+  "dependencies": {
+    "aws-sdk": "^2.1.14",
+    "jsforce": "~1.3.1"
+  },
+
+  "engines": {
+  "node": ">=0.10.0"
+  },
+
+  "author": {
+    "name": "Benjamin Krig"
+  },
   "license": "Copyright (c) 2015 Benjamin Krig",
   "bugs": {
     "url": "https://github.com/benkrig/salesforce-here/issues"
   },
+  
   "homepage": "https://github.com/benkrig/salesforce-here"
+
 }
