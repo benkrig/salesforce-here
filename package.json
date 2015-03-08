@@ -2,7 +2,7 @@
   "name": "salesforce-here",
   "version": "1.0.0",
   "description": "salesforce-here streamlines the retrieval and storage of Salesforce Metadata",
-  "homepage": "https://github.com/benkrig/salesforce-here"
+  "homepage": "https://github.com/benkrig/salesforce-here",
 
   "repository": {
     "type": "git",
