@@ -1,18 +1,17 @@
 # salesforce-here
-salesforce-here is a Node.js module that streamlines the retrieval and storage of Salesforce Metadata
+Node.js module that streamlines the retrieval and storage of Salesforce Metadata
 
 
-Install:
+# Install
 
-# Clone module your app's node_modules
 $ git clone http://github.com/benkrig/salesforce-here.git
 
-# Add dependencies
+Add to package.json: 
 "dependencies": {
     "salesforce-here": "git+https://git@github.com/benkrig/salesforce-here.git",
 },
 
-# Require module
+Use:
 var salesforce_here = require('salesforce-here');
 
 
