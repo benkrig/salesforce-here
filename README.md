@@ -58,13 +58,18 @@ sfhere.getMetadataTypes(params, function(err, response)
 
 /*
 	pull metadata to AWS S3
-	set up constants in /lib/salesforce-here.js or process.env.~
-	
-	to: 
 
-	AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY;
-    AWS_SECRET_KEY = process.env.AWS_SECRET_KEY;
-	S3_BUCKET = process.env.S3_BUCKET;
+	first set up AWS S3 constants,
+
+		(manual)
+		to manually setup change /lib/salesforce-here.js:
+			AWS_ACCESS_KEY = 'putaccesskey';
+   	 		AWS_SECRET_KEY = 'putsecretkey';
+			S3_BUCKET = 'putbucketname';
+		
+		(default) 
+		change  process.env.~ config vars using
+			$heroku config:set AWS_ACCESS_KEY='putaccesskey'
 */
 var params = 
 {
