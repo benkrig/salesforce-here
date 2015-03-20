@@ -20,8 +20,9 @@ Use:
 ```node
 var sfhere = require('salesforce-here');
 
-
-//describe organization metadata types
+/*
+	describe organization metadata types
+*/
 var params = 
 {
 	//salesforce organization credentials
@@ -29,11 +30,13 @@ var params =
     'password' : 'password',
     'token'    : 'token',
     
-    //orgtypes
-    //'0' : production
-    //'1' : development
-    //'2' : sandbox
-    'orgtype'  : 'Integer<0,1,2>',
+    /*
+    	orgtypes~
+    	'0' : production
+    	'1' : development
+    	'2' : sandbox
+    */
+    'orgtype'  : 'Integer~0,1,2',
 };
 
 sfhere.getMetadataTypes(params, function(err, response)
@@ -45,7 +48,16 @@ sfhere.getMetadataTypes(params, function(err, response)
 //--
 
 
-//pull metadata to AWS S3
+/*
+	pull metadata to AWS S3
+	set up constants in /lib/salesforce-here.js or process.env.~
+	
+	to: 
+
+	AWS_ACCESS_KEY = process.env.AWS_ACCESS_KEY;
+    AWS_SECRET_KEY = process.env.AWS_SECRET_KEY;
+	S3_BUCKET = process.env.S3_BUCKET;
+*/
 var params = 
 {
     //salesforce organization credentials
@@ -53,14 +65,20 @@ var params =
     'password' : 'password',
     'token'    : 'token',
     
-    //orgtypes
-    //'0' : production
-    //'1' : development
-    //'2' : sandbox
-    'orgtype'  : 'int',
+    /*
+    	orgtype~
+    	'0' : production
+    	'1' : development
+    	'2' : sandbox
+    */
+    'orgtype'  : 'Integer~0,1,2',
 
-    //metadata types
-	'xmlnames' : 'Metadata~String | Array.<Metadata~String>'
+    /*
+    	metadata types~
+
+    	https://www.salesforce.com/us/developer/docs/api_meta/Content/meta_types_list.htm
+    */
+	'xmlnames' : 'String~Metadata || Array.<String~Metadata>'
 };
 
 sfhere.pullmetadata(params, function(err, response)
