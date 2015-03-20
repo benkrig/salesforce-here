@@ -1,28 +1,29 @@
 # salesforce-here
-asynchronously streamlining the retrieval and cloud-based storage of Salesforce Metadata components since 2015.
+Asynchronously streamlining the retrieval and cloud-based storage of Salesforce Metadata components since 2015.
 
-with the sibling module salesforce-there, a complete solution for Salesforce Metadata Migration is formed.
+With the sibling module salesforce-there, a complete solution for Salesforce Metadata Migration is formed.
 
 #what is it
-salesforce-here is a high-level asynchronous library that runs on the Node.js framework.
-it asyncronously retrieves and stores selected metadata components from a Salesforce Organization
-on the AWS S3 cloud computing services platform.
+Salesforce-here is a high-level asynchronous library that runs on the Node.js framework.
+
+Salesforce-here asyncronously retrieves the selected metadata components of a Salesforce Organization and 
+pushes the components to the AWS S3 cloud computing services platform for storage.
 
 
-# Install
+# install
 
+Type
 ```sh
 $ git clone http://github.com/benkrig/salesforce-here.git
 ```
-
-Add to package.json: 
+Then add to package.json: 
 ```json
 "dependencies": {
     "salesforce-here": "git+https://git@github.com/benkrig/salesforce-here.git",
 },
 ```
 
-Use:
+# use
 
 ```node
 var sfhere = require('salesforce-here');
@@ -98,10 +99,7 @@ sfhere.pullmetadata(params, function(err, response)
 	return console.log(response.message);
 });
 //--
-
 ```
-
-
 
 Created by Benjamin Krig
 Copyright (c) 2015 Benjamin Krig
