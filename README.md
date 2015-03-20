@@ -1,5 +1,12 @@
 # salesforce-here
-Node.js module that streamlines the retrieval and storage of Salesforce Metadata
+asynchronously streamlining the retrieval and cloud-based storage of Salesforce Metadata components since 2015.
+
+with the sibling module salesforce-there, a complete solution for Salesforce Metadata Migration is formed.
+
+#what is it
+salesforce-here is a high-level asynchronous library that runs on the Node.js framework.
+it asyncronously retrieves and stores selected metadata components from a Salesforce Organization
+on the AWS S3 cloud computing services platform.
 
 
 # Install
